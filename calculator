@@ -1,0 +1,36 @@
+# calculator 
+# 1.Addition
+# 2.Subraction
+# 3.Multiplication
+# 4.Division
+
+def calculator():
+
+ print("1 Addition")
+ print("2 Subraction")
+ print("3 Multiplication")
+ print("4 division")
+
+ cal = input("enter a calculat operator:" )
+
+ value1 = float (input("enter a first value: "))
+ value2 = float (input("enter a first value: "))
+
+ if cal == "1":
+  print("values of addition is ", (value1+value2))
+
+ elif cal  == "2":
+   print("values of Subraction is ", (value1-value2))
+
+ elif cal == "3":
+     print("values of multiplication is ", (value1*value2))
+
+ elif cal == "4":
+  if value2 == 0.0:
+         print("those numbers divisable by 0 as error")
+  else:
+         print("values of Division is ", (value1/value2))
+
+ else:
+     print("inalid syntax")    
+calculator()      
